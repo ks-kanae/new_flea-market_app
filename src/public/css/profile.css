@@ -1,0 +1,122 @@
+.profile-container {
+    width: 40%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.profile-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-picture-group {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+    background-color: #e0e0e0;
+}
+
+.profile-picture-placeholder {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    flex-shrink: 0;
+}
+
+.profile-picture-button {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #ff5655;
+    border-radius: 7px;
+    color: #ff5655;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 40px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.update-button {
+    width: 100%;
+    margin: 25px auto 60px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff5655;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.update-button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    .profile-container {
+        width: 55%;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    .profile-picture-group {
+        align-items: center;
+        gap: 40px;
+    }
+
+    .profile-heading {
+        font-size: 22px;
+    }
+
+    .update-button {
+        margin-bottom: 40px;
+    }
+}

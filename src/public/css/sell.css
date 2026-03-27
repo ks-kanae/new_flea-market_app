@@ -1,0 +1,239 @@
+.sell-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    color: #333;
+}
+
+.sell-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-section {
+    padding-bottom: 30px;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
+    color: #737171;
+}
+
+.form-label {
+    display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 12px;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.image-upload-area {
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+    padding: 40px;
+    text-align: center;
+}
+
+.image-input {
+    display: none;
+}
+
+.image-upload-label {
+    display: inline-block;
+    padding: 7px 22px;
+    border: 1px solid #ff5655;
+    background: transparent;
+    color: #ff5655;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.image-upload-label:hover {
+    background-color: #ff5655;
+    color: #fff;
+}
+
+.image-preview {
+    margin-top: 20px;
+    display: none;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 4px;
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-tag {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.category-tag input[type="checkbox"] {
+    display: none;
+}
+
+.category-tag span {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #ff5655;
+    background: transparent;
+    color: #ff5655;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.category-tag input[type="checkbox"]:checked+span {
+    background-color: #ff5655;
+    color: #fff;
+}
+
+.category-tag:hover span {
+    background-color: #ffe5e5;
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #ff5655;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ff5655;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: #ff5655;
+}
+
+.price-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.price-input {
+    padding-left: 32px;
+}
+
+.submit-button {
+    background-color: #ff5655;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #fd1616;
+}
+
+@media (max-width: 768px) {
+    .sell-container {
+        padding: 20px 15px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .category-tags {
+        gap: 6px;
+    }
+
+    .category-tag span {
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+}
