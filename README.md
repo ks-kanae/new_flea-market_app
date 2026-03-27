@@ -78,8 +78,8 @@ MAIL_FROM_NAME="${APP_NAME}"
 ```
 ```
 (テスト用のStripe API キーを追加)
-+ STRIPE_KEY=pk_test_以下にキーを追加
-+ STRIPE_SECRET=sk_test_以下にキーを追加
++ STRIPE_KEY=**********
++ STRIPE_SECRET=**********
 ```
 #### キー生成
 
